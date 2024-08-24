@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Data Fetcher</title>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Google Sheets Data Fetcher</h1>
+    <label for="fromDate">From Date:</label>
+    <input type="date" id="fromDate" name="fromDate"><br>
 
+    <label for="toDate">To Date:</label>
+    <input type="date" id="toDate" name="toDate"><br>
+
+    <label for="agentName">Agent Name:</label>
+    <input type="text" id="agentName" name="agentName"><br>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department"><br>
+
+    <label for="region">Region:</label>
+    <input type="text" id="region" name="region"><br>
+
+    <button onclick="fetchAndDownloadData()">Fetch and Download Data</button>
+</body>
+</html>
